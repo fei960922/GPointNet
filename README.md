@@ -16,6 +16,7 @@ The tensorflow implementation (tf1.14) can be found at: ~~[Will Announce Soon]()
 - (Optional) Create an environment through conda by the provided environment.yml
     - You can also manually install the package:
         - Python 3.6-3.8, pytorch==1.8.0, pytorch-lightning==1.2.1, etc.
+    - Typically, pytorch==1.8.0 require cuda >= 10.2. If you only have cuda 10.0 or 10.1. You may install pytorch==1.4.0
 - (Optional) In order to calculate the quantitive result, compile extra pytorch operator. You can skip this.
     - see FAQ if error occured.
 
@@ -25,7 +26,7 @@ The tensorflow implementation (tf1.14) can be found at: ~~[Will Announce Soon]()
     cd GPointNet
 
     # Download dataset and checkpoint
-    wget http://www.stat.ucla.edu/~jxie/GPointNet/data/modelnet_2K.zip 
+    wget http://www.stat.ucla.edu/~jxie/GPointNet/data/modelnet_2k.zip 
     unzip -q modelnet_2k.zip 
     mkdir checkpoint
     wget http://www.stat.ucla.edu/~jxie/GPointNet/checkpoint/syn_cvpr_chair.ckpt -O checkpoint/syn_cvpr_chair.ckpt
